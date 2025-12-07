@@ -11,15 +11,12 @@
 <body>
     <div id="flash-screen">
         <h2> WELCOME </h2>
-        <button id ="mainMenu"> INIT</button>
+        <button id="mainMenu"> INIT</button>
     </div>
 
-
-
-
     <div id="menu">
-        <h1> GENERIC GAME </h1> 
-        <div id="button-group"> 
+        <h1> GENERIC GAME </h1>
+        <div id="button-group">
             <button id="start">START</button>
             <button id="options">OPTIONS</button>
             <button id="exit">EXIT</button>
@@ -29,6 +26,40 @@
     <audio id="music">
         <source src="resources/audio/menu/Hollow Knight OST - Enter Hallownest.mp3" type="audio/mpeg">
     </audio>
+
+    <div id="optionsMenu">
+        <h1>OPTIONS</h1>
+        <div id="controls">
+            <h2>GAME CONTROLS</h2>
+            <table>
+                <tr>
+                    <th>Up</th>
+                    <th> &uarr; </th>
+                </tr>
+                <tr>
+                    <th>Down</th>
+                    <th>&darr;</th>
+                </tr>
+                <tr>
+                    <th>left</th>
+                    <th>&larr;</th>
+                </tr>
+                <tr>
+                    <th>rigth</th>
+                    <th>&rarr;</th>
+                </tr>
+            </table>
+            <button id="back"> BACK </button>
+        </div>
+
+        <div id="optionMenuButtons">
+            <button id="controlsView">CONTROLS </button>
+        </div>
+
+        <button id="back"> BACK </button>
+
+
+    </div>
 
     <script src="logic/game.js"></script>
 </body>
