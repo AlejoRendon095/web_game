@@ -8,11 +8,16 @@ const menuMusic = document.getElementById("music");
 const flashScreen = document.getElementById("flash-screen");
 const menuDiv = document.getElementById("menu");
 const mainMenuButton = document.getElementById("mainMenu");
+
+
 const optionMenuDiv = document.getElementById("optionsMenu");
-const backButton = document.getElementById("back");
+const backControlsButton = document.getElementById("back-controls");
+const backOptionsButton = document.getElementById("back-options");
+const gameControlView = document.getElementById("controls");
+
 const viewControlsDiv = document.getElementById("optionMenuButtons");
 const gameControlButton = document.getElementById("controlsView");
-const gameControlView = document.getElementById("controls");
+
 
 
 
@@ -36,6 +41,7 @@ function initMenu() {
 
     document.getElementById("start").onclick = () => {
         currentState = STATE.GAME;
+        //menuMusic.onpause;
         //startGame();
     }
 
@@ -60,17 +66,14 @@ function optionsMenu() {
     menuDiv.style.display = 'none';
     optionMenuDiv.style.display = 'flex';
     gameControlButton.onclick = () => {
-        optionMenuDiv.style.display = 'none';
         gameControlView.style.display = 'flex';
-
-        backButton.onclick = () => {
-            gameControlView.style.display = 'none';
-            optionMenuDiv.style.display = 'flex';
-        }
+    }
+    backControlsButton.onclick = () => {
+        gameControlView.style.display = 'none';
 
     }
-    
-    backButton.onclick = () => {
+
+    backOptionsButton.onclick = () => {
         optionMenuDiv.style.display = 'none';
         menuDiv.style.display = 'flex';
     }

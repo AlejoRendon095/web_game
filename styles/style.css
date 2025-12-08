@@ -139,3 +139,21 @@ button:active {
     font-family: 'Cinzel', serif;
     transition: opacity 1s ease-out; 
 }
+
+#controls{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, rgba(10, 0, 20, 1), rgba(0, 0, 0, 1));
+    color: #F0F8FF;
+    z-index: 100; 
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: opacity 1s ease-out; 
+}
