@@ -40,7 +40,7 @@ export class menuManager {
     }
 
     eventListener(){
-        //this.startButton.addEventListener('click', () => this.changeState(STATE.GAME));
+        this.startButton.addEventListener('click', () => this.changeState(STATE.GAME));
         this.optionsButton.addEventListener('click', () => this.changeState(STATE.OPTIONS));
         this.exitButton.addEventListener('click', () => alert("Bye ZUNGA"));
 
